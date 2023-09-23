@@ -99,3 +99,18 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
   },
 });
+
+window.addEventListener("load", function () {
+      var preloader = document.getElementById("preloader");
+
+      // Add a delay (in milliseconds) before hiding the preloader
+      var delayMillis = 1000; // Adjust this value as needed (2000ms = 2 seconds)
+
+      setTimeout(function () {
+         preloader.style.display = "none"; // Hide the preloader
+      }, delayMillis);
+   });
+
+
+
+
