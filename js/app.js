@@ -108,7 +108,7 @@ window.addEventListener("load", function () {
 
       setTimeout(function () {
          preloader.style.display = "none"; // Hide the preloader
-      }, delayMillis);
+      });
    });
 
    const cursoreDot = document.querySelector("[data-cursor-dot]");
