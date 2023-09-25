@@ -278,7 +278,7 @@ img {
 }
 
 .btn:hover {
-  background-color: #F57516;
+  background-color: #6b44e0;
 }
 
 .btn.small {
@@ -346,7 +346,7 @@ nav .container {
 
 .links a.active:hover {
   color: var(--light-one);
-  background-color: #f57500;
+  background-color: #6b44e0;
 }
 
 .hamburger-menu {
@@ -1382,11 +1382,7 @@ header .circle {
   cursor: pointer;
 }
 
-.followme-wrap {
-  display: flex;
-}
-
-.followme {
+.followme-wrap, .followme {
   display: flex;
   align-items: center;
 }
@@ -1395,15 +1391,34 @@ header .circle {
   color: #7b7b7b;
   font-weight: 500;
   font-size: 1.3rem;
+  margin: 0; 
 }
 
 .followme .footer-line {
-  width: 60px;
+  width: 30px;
   height: 2px;
   background-color: #7b7b7b;
-  margin: 0 1.2rem;
-  display: inline-block;
+  margin: 0 0.6rem; 
 }
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 768px) {
+  .followme {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .followme h3 {
+    font-size: 1.1rem; 
+    margin-bottom: 0.5rem; 
+  }
+  
+  .followme .footer-line {
+    margin: 0.3rem 0; 
+  }
+}
+
+
 
 .social-media a {
   color: #7b7b7b;
@@ -1501,6 +1516,7 @@ header .circle {
     padding: 0.75rem 1.7rem;
     font-size: 0.8rem;
   }
+  
 
   .btn.small {
     padding: 0.65rem 1.6rem;
